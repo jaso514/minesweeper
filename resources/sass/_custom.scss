@@ -1,0 +1,53 @@
+.bg-lighting{
+  background-color: $secundary !important;
+}
+.bg-jobsty{
+  background-color: $primary !important;
+}
+
+.navbar {
+  &-jobsty {
+    & .navbar-brand {
+      color: $secundary !important;
+    }
+  }
+  &-toggler {
+    &-icon {
+      font-size: 1.5em;
+      height: auto;
+      color: $secundary;
+    }
+    
+  }
+}
+.nav-tabs.nav-jobsty {
+  border-bottom: 1px solid $primary;
+  .nav-tabs .nav-link {
+      background-color: $default;
+      opacity: 0.75;
+  }
+  .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: $auxPrimary;
+    background-color: $default;
+    border-color: $default $default $primary;
+  }
+  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: $default $default $primary;
+  }
+}
+
+.game-container .game {
+  &-info {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  &-board {
+    width: 860px;
+    & .cell {
+      background-color: $secundary;
+      border: 1px #FFF solid;
+    }
+  }
+  
+}

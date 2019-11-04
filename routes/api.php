@@ -13,6 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::prefix('game')->group(function(){
+    Route::get('/{difficult}', 'Api\GameController@get');
+});
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
